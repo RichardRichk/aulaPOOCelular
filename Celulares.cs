@@ -30,7 +30,7 @@ namespace aulaPOOCelular
         public void Ligar(){
             Console.WriteLine($"Ligando...");
             Thread.Sleep(1250);
-            Console.WriteLine($"Bem vindo!");           
+            Console.WriteLine($"Bem vindo!");                    
         }
 
         public void Desligar(){
@@ -59,21 +59,24 @@ namespace aulaPOOCelular
                 Console.WriteLine($"Ligando para Goku...");
                 Thread.Sleep(1250);
                 Console.WriteLine($"Oi, Eu sou o Goku!"); 
-                Console.ReadLine();              
+                Console.WriteLine($"Tecle (ENTER) para confirmar.");
+                Console.ReadKey();               
                     break;
 
                 case '2':
                 Console.WriteLine($"Ligando para Iron man...");
                 Thread.Sleep(1250);
                 Console.WriteLine($"E eu sou... O Homem de Ferro! (som de estalo)"); 
-                Console.ReadLine();
+                Console.WriteLine($"Tecle (ENTER) para confirmar.");
+                Console.ReadKey(); 
                     break;
 
                 case '3':
                 Console.WriteLine($"Ligando para Batman...");
                 Thread.Sleep(1250);
                 Console.WriteLine($"I am The Batman, ou Bruce Wayne, quem fala ?"); 
-                Console.ReadLine();
+                Console.WriteLine($"Tecle (ENTER) para confirmar.");
+                Console.ReadKey(); 
                     break;
 
                 case '0':
@@ -110,7 +113,8 @@ namespace aulaPOOCelular
                 Console.ReadLine();
                 Thread.Sleep(1250);
                 Console.WriteLine($"Oi, Eu sou o Goku! Mas nao posso falar agora, desculpe!"); 
-                Console.ReadLine();              
+                Console.WriteLine($"Tecle (ENTER) para confirmar.");
+                Console.ReadKey();               
                     break;
 
                 case '2':
@@ -118,7 +122,8 @@ namespace aulaPOOCelular
                 Console.ReadLine();
                 Thread.Sleep(1250);
                 Console.WriteLine($"E eu sou... O Homem de Ferro! (som de estalo)... Mas nao posso falar agora, desculpe!"); 
-                Console.ReadLine();
+                Console.WriteLine($"Tecle (ENTER) para confirmar.");
+                Console.ReadKey(); 
                     break;
 
                 case '3':
@@ -126,7 +131,8 @@ namespace aulaPOOCelular
                 Console.ReadLine();
                 Thread.Sleep(1250);
                 Console.WriteLine($"I am The Batman, ou Bruce Wayne, quem fala ?"); 
-                Console.ReadLine();
+                Console.WriteLine($"Tecle (ENTER) para confirmar.");
+                Console.ReadKey(); 
                     break;
 
                 case '0':

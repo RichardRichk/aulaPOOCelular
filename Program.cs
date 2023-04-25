@@ -14,6 +14,8 @@ internal class Program
         Console.WriteLine($"Qual o tamanho ? (P/M/G)");
         celular.Tamanho = char.Parse(Console.ReadLine());
 
+        CelularLigado:
+
         do
         {
             Console.WriteLine($"O celular esta Desligado ? (S/N)");
@@ -29,6 +31,7 @@ internal class Program
                     [1] - Fazer ligacao;
                     [2] - Mandar mensagens;
                     [3] - Entrar no banco;
+                    [4] - Ver informacoes do celular;
 
                     [0] - Desligar
                     ");
@@ -49,6 +52,21 @@ internal class Program
                         Thread.Sleep(1500);                   
                             break;
 
+                        case '4':
+                        Console.WriteLine
+                        (@$"
+                        Aqui estao as informacoes do celular:
+
+                        Cor: {celular.Cor};
+
+                        Modelo: {celular.Modelo};
+
+                        Tamanho: {celular.Tamanho};
+                        ");
+                        Console.WriteLine($"Tecle (ENTER) para confirmar.");
+                        Console.ReadKey();                    
+                            break;
+
                         case '0':
                         celular.Desligar();
                             break;
@@ -60,12 +78,22 @@ internal class Program
             }
             else
             {
-                Console.WriteLine($"Consegue ligar o celular ?");
-                celular.EscolhaLigar = char.Parse(Console.ReadLine());
-                if (true)
+                do
                 {
-                    
+                Console.WriteLine($"Consegue ligar o celular ? S/N");
+                celular.EscolhaLigar = char.Parse(Console.ReadLine());
+                if (celular.EscolhaLigar == 's')
+                {
+                    Console.Clear();
+                    goto CelularLigado;
                 }
+                else
+                {
+                    Console.WriteLine($"Encerrando programa...");
+                    Thread.Sleep(1250);
+                    return;
+                }
+                } while (celular.EscolhaLigar != 'n' || celular.EscolhaLigar != 's');
                 
             }
         } while (celular.OpcaoDesligado != 's' || celular.OpcaoDesligado != 'n');
