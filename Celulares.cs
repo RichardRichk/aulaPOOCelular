@@ -40,6 +40,12 @@ namespace aulaPOOCelular
             return;                        
         }
 
+        public void Voltar(){
+            Console.WriteLine($"Retornando...");
+            Thread.Sleep(1250);
+            return;                        
+        }
+
         public void FazerLigacao(){
         do
         {
@@ -50,7 +56,7 @@ namespace aulaPOOCelular
             [2] - Iron man;
             [3] - Batman; 
 
-            [0] - Desligar Celular;           
+            [0] - Voltar;           
             ");
             EscolhaLigacao = char.Parse(Console.ReadLine());
             switch (EscolhaLigacao)
@@ -80,7 +86,7 @@ namespace aulaPOOCelular
                     break;
 
                 case '0':
-                this.Desligar();
+                this.Voltar();
                     break;
 
                 default:
@@ -103,7 +109,7 @@ namespace aulaPOOCelular
             [2] - Iron man;
             [3] - Batman; 
 
-            [0] - Desligar Celular;           
+            [0] - Voltar;           
             ");
             EscolhaMensagem = char.Parse(Console.ReadLine());
             switch (EscolhaMensagem)
@@ -136,7 +142,7 @@ namespace aulaPOOCelular
                     break;
 
                 case '0':
-                this.Desligar();
+                this.Voltar();
                     break;
 
                 default:
