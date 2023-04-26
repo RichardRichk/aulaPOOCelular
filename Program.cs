@@ -12,19 +12,24 @@ internal class Program
         celular.Modelo = Console.ReadLine();
 
         Console.WriteLine($"Qual o tamanho ? (P/M/G)");
-        celular.Tamanho = char.Parse(Console.ReadLine());
+        celular.Tamanho = char.Parse(Console.ReadLine().ToLower());
 
-        CelularLigado:
-
-        do
-        {
             Console.WriteLine($"O celular esta Desligado ? (S/N)");
             celular.OpcaoDesligado = char.Parse(Console.ReadLine());
+            while (celular.OpcaoDesligado != 's' && celular.OpcaoDesligado != 'n'){
+                Console.WriteLine($"O celular esta Desligado ? (S/N)");
+                celular.OpcaoDesligado = char.Parse(Console.ReadLine());
+            }
+
+            //goto
+            CelularLigado:
+
             if (celular.OpcaoDesligado == 'n')
             {
                 do
                 {
-                    
+                    // CelularLigado:
+
                     Console.WriteLine($"No que gostaria de mexer ?");
                     Console.WriteLine
                     (@$"
@@ -78,6 +83,7 @@ internal class Program
             }
             else
             {
+                //CelularDesligado
                 do
                 {
                 Console.WriteLine($"Consegue ligar o celular ? S/N");
@@ -85,6 +91,7 @@ internal class Program
                 if (celular.EscolhaLigar == 's')
                 {
                     Console.Clear();
+                    celular.OpcaoDesligado = 'n';
                     goto CelularLigado;
                 }
                 else
@@ -95,11 +102,6 @@ internal class Program
                 }
                 } while (celular.EscolhaLigar != 'n' || celular.EscolhaLigar != 's');
                 
-            }
-        } while (celular.OpcaoDesligado != 's' || celular.OpcaoDesligado != 'n');
-        
-        
-        
-        
+            }        
     }
 }

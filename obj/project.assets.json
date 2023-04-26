@@ -8,19 +8,19 @@
     "net7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\richa\\.nuget\\packages\\": {}
+    "C:\\Users\\45811737874\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\richa\\OneDrive\\Área de Trabalho\\aulaPOOCelular\\aulaPOOCelular.csproj",
+      "projectUniqueName": "C:\\Users\\45811737874\\Desktop\\aulaPOOCelular\\aulaPOOCelular.csproj",
       "projectName": "aulaPOOCelular",
-      "projectPath": "C:\\Users\\richa\\OneDrive\\Área de Trabalho\\aulaPOOCelular\\aulaPOOCelular.csproj",
-      "packagesPath": "C:\\Users\\richa\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\richa\\OneDrive\\Área de Trabalho\\aulaPOOCelular\\obj\\",
+      "projectPath": "C:\\Users\\45811737874\\Desktop\\aulaPOOCelular\\aulaPOOCelular.csproj",
+      "packagesPath": "C:\\Users\\45811737874\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\45811737874\\Desktop\\aulaPOOCelular\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\richa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\45811737874\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -61,7 +61,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }
